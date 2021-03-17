@@ -10,7 +10,7 @@ Open Systems Interconnection - 7 layers
 
 7. Application
 
-- Provides networking options to programs running on a computer.
+- Accepts communication requests from apps.
 - Data given to Application layer is passed down to presentation layer.
 
 6. Presentation
