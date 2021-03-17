@@ -6,9 +6,7 @@
 
  <- OSI Model ->
 
-Open Systems Interconnection - 7 layers, Application, Presentation, Session, Transport, Network, Data Link, Phyisical
-
-Anxious Pale Shakespeare Treated Nervous Drunks Patiently
+Open Systems Interconnection - 7 layers
 
 7. Application
 
