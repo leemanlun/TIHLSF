@@ -35,12 +35,12 @@ Open Systems Interconnection - 7 layers
 2. Data Link
 
 - Receives packet and IP adress of remote computer from Network layer and adds MAC address of receiver.
+- Makes sure packets haven't been corrupted.
 - Every network enabled computer has a **N**etwork **I**nterface **C**ard that comes with MAC address to identify.
 - Makes sure data is in a format suitable for transmission.
 
 1. Physical
 
 - Converts binary data of transmission into signals and vice versa.
--
 
 
