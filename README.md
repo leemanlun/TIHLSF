@@ -4,7 +4,7 @@
 
 **Introductory Networking**
 
-- OSI Model
+ <- OSI Model ->
 
 Open Systems Interconnection - 7 layers, Application, Presentation, Session, Transport, Network, Data Link, Phyisical
 
