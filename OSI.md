@@ -1,10 +1,4 @@
-# TIHLSF THINGS I HAVE LEARNED SO FAR
-
-(from tryhackme.com)
-
-**Introductory Networking**
-
- <- OSI Model ->
+# OSI Model
 
 Open Systems Interconnection - 7 layers
 
