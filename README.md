@@ -1,4 +1,4 @@
 # TIHLSF THINGS I HAVE LEARNED SO FAR
 
-(FROM TRYHACKME.COM)
+(from tryhackme.com)
 
