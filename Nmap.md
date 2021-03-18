@@ -74,3 +74,16 @@ To see which IP addresses contain actives host, and which do not, by sending ICM
 
 ## **N**map **S**cripting **E**ngine
 
+Used for recon, but can also scan vuln, automate exploits etc.
+
+**HOW TO USE**
+
+![image](https://user-images.githubusercontent.com/80155116/111615139-44017800-8845-11eb-8f00-274a048abec4.png)
+
+**HOW TO FIND**
+
+![image](https://user-images.githubusercontent.com/80155116/111617665-47e2c980-8848-11eb-998a-218af0ada7ef.png)
+![image](https://user-images.githubusercontent.com/80155116/111617687-4dd8aa80-8848-11eb-9368-327f65f701ad.png)
+
+
+
