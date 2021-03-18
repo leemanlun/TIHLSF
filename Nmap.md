@@ -85,5 +85,21 @@ Used for recon, but can also scan vuln, automate exploits etc.
 ![image](https://user-images.githubusercontent.com/80155116/111617665-47e2c980-8848-11eb-998a-218af0ada7ef.png)
 ![image](https://user-images.githubusercontent.com/80155116/111617687-4dd8aa80-8848-11eb-9368-327f65f701ad.png)
 
+## Firewall Evasion
+
+Firewall blocks all ICMP packets by default, it's problematic cos we use ping to establish activity of target with Nmap. So Nmap will register host with this firewall as dead and not scan at all.
+
+In comes
+`-Pn`
+- Tells Nmap to not ping before scanning.
+- Host will always be treated as alive and bypass ICMP block.
+- THE THING IS, it will take a long time since it will potentially be scanning dead hosts.
+
+Other evasion flags:
+- `-f` Split packet to smaller pieces.
+- `--scan-delay <time>ms` Adds delay between packets sent, useful for unstable network and time-based firewalls.
+- `--badsum` Generate invalid chechsum for packet, TCP/IP will drop this packet.
+- many more [here](https://nmap.org/book/man-bypass-firewalls-ids.html)
+
 
 
