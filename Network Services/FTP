@@ -1,1 +1,17 @@
+# File Transfer Protocol
 
+Application protocol used to allow remote transfer of files over a network. 
+
+FTP session operates using 2 channels:
+  1. a **command/control** channel
+    - for transmitting commands and replies to those commands.
+  2. a **data** channel
+    - for transferring of data.
+    
+ Uses Client-Server model, client intiates connection with server, server validates login credentials then opens session.
+ 
+ *Client can execute FTP commands on server when session is active.*
+ 
+ 
+ 
+ 
