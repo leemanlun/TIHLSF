@@ -77,17 +77,17 @@ id_rsa is most useful for us, it's the default name of an SSH identity file.
 
 now change the permission of id_rsa to 600, user who owns this file (me) can do everything, group and everyone else have no permission.
 
-``chmod 600 id_rsa``
+### ``chmod 600 id_rsa``
 
-this is unrelated but this is my unsuccessful attempt at trying to find the username (cactus). couldn't find it so i looked up the answer. *please let me know if you know how*
+this is unrelated but this is my unsuccessful attempt at trying to find the username (cactus). couldn't find it so i looked up the answer. *please let me know if you know how.*
 
 ![image](https://user-images.githubusercontent.com/80155116/111867066-8ad2a780-89d6-11eb-8f2c-35d8299279ad.png)
 
-``ssh -i id_rsa cactus@10.10.11.186`` to login.
+### ``ssh -i id_rsa cactus@10.10.11.186`` to login.
 
 ![image](https://user-images.githubusercontent.com/80155116/111867128-f288f280-89d6-11eb-949a-b42900f9247b.png)
 
-this is unrelated too but just wanted to showcase how i used grep to find out what the flag -i does.
+*this is unrelated too but just wanted to showcase how i used grep to find out what the flag -i does.*
 
 ![image](https://user-images.githubusercontent.com/80155116/111867150-14827500-89d7-11eb-858a-5d2b7a5dd2ac.png)
 
