@@ -1,5 +1,7 @@
 # Linux Fundamentals
 
+<- MORE TO BE IMPORTED FROM NOTES ->
+
 #### chmod
 
 ``chmod <permissions> <file>``
