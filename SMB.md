@@ -67,4 +67,9 @@ and then we run the text file:
 
 **Important info: Name of owner, context of email -> SSH enabled to access main server due.**
 
+Now we have the content of the .ssh file! These are the authorization keys.
+
+![image](https://user-images.githubusercontent.com/80155116/111866519-f0249980-89d2-11eb-9a87-645f94fd0cdb.png)
+
+id_rsa is most useful for us, it's the default name of an SSH identity file.
 
