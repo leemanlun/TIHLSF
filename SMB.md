@@ -33,7 +33,7 @@ Tool for enumerating SMB shares.
 
 ![image](https://user-images.githubusercontent.com/80155116/111866306-6b854b80-89d1-11eb-8bd3-7e01df28fbc6.png)
 
-Using Enum4Linux to enumerate SMB, important thing to note here are the shares, especially that one that's named 'profiles'
+Using Enum4Linux to enumerate SMB, important thing to note here are the **shares**, especially that one that's named 'profiles'.
 
 ### Exploiting SMB
 
@@ -47,7 +47,6 @@ We use client to access resource to servers.
 
 Remotely access the SMB share using syntax: ``smbclient //[IP]/[SHARE]`` followed by tag ``-U [name]`` to specify name and ``-p [port]`` to specify port.
 
-![image](https://user-images.githubusercontent.com/80155116/111866232-e732c880-89d0-11eb-86a8-a533f9cf2d5a.png)
 
 Using SMB Client to find out if the share has been configured to allow anonymous access by 
 
@@ -55,5 +54,17 @@ Using SMB Client to find out if the share has been configured to allow anonymous
 2. connecting to share we found on enumeration stage
 3. not supplying a password.
 
+![image](https://user-images.githubusercontent.com/80155116/111866232-e732c880-89d0-11eb-86a8-a533f9cf2d5a.png)
+
+
+Here we use SMB command ``get <FILE> <newFileName>`` to download the text file from the share,
+and then we run the text file:
+
+![image](https://user-images.githubusercontent.com/80155116/111866398-0da53380-89d2-11eb-80df-dd12e6ca81a1.png)
+
+
+![image](https://user-images.githubusercontent.com/80155116/111866430-375e5a80-89d2-11eb-8133-bab3241ec7cd.png)
+
+**Important info: Name of owner, context of email -> SSH enabled to access main server due.**
 
 
