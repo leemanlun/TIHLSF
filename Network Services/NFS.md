@@ -77,7 +77,7 @@ When files are with SUID bit set, it means the files can be run with permission 
 * We can upload files and control their permissions
 * We can set permission of whatever we upload(in this case a bash shell executable)
 * We then log in with SSH, execute the file to get root shell.
-* 
+
 ``NFS Access ->
 
         Gain Low Privilege Shell ->
@@ -90,7 +90,12 @@ When files are with SUID bit set, it means the files can be run with permission 
 
                         Execute SUID Bit Bash Executable ->
 
-                            ROOT ACCESS``
+                            ROOT ACCESS
+``
+Download the bash file and move it to the mount on local. ``cp ~/Downloads/bash .``
+
+``sudo chown root bash`` to make sure it's own by root user.
+
 
 
 
