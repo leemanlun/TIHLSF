@@ -60,3 +60,37 @@ id_rsa.pub → this is the key that used send others to encrypt when they send m
 
 ## Exploiting NFS
 
+### Shell Privilege Escalation
+
+We'll try this since we have low shell on the machine, depending on how it's configured.
+
+### root_squash
+
+Prevents anyone connecting NFS from getting root access to the NFS volume, root squashing is enabled on default.
+
+### SUID
+
+When files are with SUID bit set, it means the files can be run with permission of owner/group, we'll use this to get shell with these privileges.
+
+### Here's how to do it
+
+* We can upload files and control their permissions
+* We can set permission of whatever we upload(in this case a bash shell executable)
+* We then log in with SSH, execute the file to get root shell.
+* 
+``NFS Access ->
+
+        Gain Low Privilege Shell ->
+
+            Upload Bash Executable to the NFS share ->
+
+                Set SUID Permissions Through NFS Due To Misconfigured Root Squash ->
+
+                    Login through SSH ->
+
+                        Execute SUID Bit Bash Executable ->
+
+                            ROOT ACCESS``
+
+
+
