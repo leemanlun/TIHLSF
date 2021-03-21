@@ -52,4 +52,11 @@ id_rsa → this is the private key of the user which used to login to the system
 
 id_rsa.pub → this is the key that used send others to encrypt when they send message to us.
 
+### To gain SSH access
+
+1. ``cp id_rsa /tmp`` copy id_rsa to /tmp
+2. ``chmod 600 id_rsa`` change permission
+3. ``ssh -i id_rsa cappucino@$ip``
+
+## Exploiting NFS
 
