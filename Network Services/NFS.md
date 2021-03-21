@@ -98,7 +98,7 @@ Download the bash file and move it to the mount on local. ``cp ~/Downloads/bash 
 
 ``chmod +s bash`` to add the SUID bit permission.
 
-``chmod o+x bash`` to add excecute on everyone else,
+``chmod o+x bash`` to add exeecute on everyone else,
 
 ![image](https://user-images.githubusercontent.com/80155116/111904211-8aa3dc00-8aaa-11eb-95a6-bfd99ba4b81f.png)
 
