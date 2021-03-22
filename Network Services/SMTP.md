@@ -29,3 +29,5 @@ Like a mail sorting office:
 5. Recipient's SMTP server verifies incoming email - by checking if domain and user name have been recognised. Finally forwarding the email to POP/IMAP server.
 6. Email then shows up in recipient's inbox.
 
+## Enumerating SMTP
+
