@@ -31,3 +31,19 @@ Like a mail sorting office:
 
 ## Enumerating SMTP
 
+### Enumerating Server Details
+
+Vulnerable servers will provide initial foothold into a network. *smtp_version* module in metasploit does this, it will scan range of IP addresses and determine version of any mail servers it encounters.
+
+### Enumerating Users
+
+Two internal commands:
+ 1. VRFY - confirming names of valid users 
+ 2. EXPN - reveals actual address of user's aliases and lists of email.
+
+We can do this manually over telnet but we'll use MetaSploit, ``sudo apt update`` to update.
+
+``msfconsole`` to start MetaSploit.
+
+
+
