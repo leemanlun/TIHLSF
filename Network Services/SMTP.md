@@ -51,6 +51,35 @@ We can do this manually over telnet but we'll use MetaSploit, ``sudo apt update`
 
 ![image](https://user-images.githubusercontent.com/80155116/112123733-65d47380-8c26-11eb-8eed-cae86922abe5.png)
 
+### Metasploit
+
+``msfconsole -q`` to load.
+
+``search smtp_version`` to search for the module, full module name is ``auxiliary/scanner/smtp/smtp_version``.
+
+``use 0`` to use module and ``show options`` to list the options.
+
+![image](https://user-images.githubusercontent.com/80155116/112238333-4f233080-8ca9-11eb-8bb9-5a03948873f5.png)
+
+``RPORT`` is using 25, so its correct. However, ``RHOSTS`` hasn't been set up.
+
+Set ``THREADS`` to 32 to speped up. 
+
+![image](https://user-images.githubusercontent.com/80155116/112239443-577c6b00-8cab-11eb-9dd2-755b136cd56f.png)
+
+Run the exploit,
+
+![image](https://user-images.githubusercontent.com/80155116/112239566-94486200-8cab-11eb-9d71-f0cca29330c8.png)
+
+*polosmtp.home* is the system mail name, *Postfix* is the name of the Mail Transfer Agent (MTA).
+
+Now look up ``smtp_enum``, full module name is ``auxiliary/scanner/smtp/smtp_enum``.
+
+We are gonna use ``top-usernames-shortlist.txt`` from Usernames subsection of seclists ``/usr/share/seclists/Usernames``.
+
+![image](https://user-images.githubusercontent.com/80155116/112239988-61eb3480-8cac-11eb-8042-8a54290061f1.png)
+
+USER_FILE need to be set to the wordlist's path, RHOSTS also needs to be changed to our attacking machine.
 
 
 
