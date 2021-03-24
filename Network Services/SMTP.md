@@ -81,6 +81,11 @@ We are gonna use ``top-usernames-shortlist.txt`` from Usernames subsection of se
 
 USER_FILE need to be set to the wordlist's path, RHOSTS also needs to be changed to our attacking machine.
 
+![image](https://user-images.githubusercontent.com/80155116/112240315-f786c400-8cac-11eb-8f92-1f295ead6f25.png)
+
+*Made a mistake here where I left out the actual usernames text file so the scan returned nothing.*
+*I think the scan didn't work becasue seclists wasn't installed.*
+
 
 
 
