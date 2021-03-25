@@ -86,6 +86,33 @@ USER_FILE need to be set to the wordlist's path, RHOSTS also needs to be changed
 *Made a mistake here where I left out the actual usernames text file so the scan returned nothing.*
 *I think the scan didn't work becasue seclists wasn't installed.*
 
+## Exploiting SMTP
+
+### Things we have discovered:
+
+1. User account name
+2. Type of SMTP server and Operating System running
+3. Only open port on the machine is an SSH login, we will use Hydra to try and bruteforce it.
+
+### Hydra
+
+/usr/share/wordlists, rockyou.txt is one of the most commonly used.
+
+SecLists has a wider array of other wordlists that are useful for other purposes like subdomain enumeration.
+
+``hydra -t 16 -l USERNAME -P /usr/share/worlists/rockyou.txt -vV $ip ssh``
+
+![image](https://user-images.githubusercontent.com/80155116/112402783-02eff300-8d72-11eb-8042-317bd9a0e422.png)
+
+![image](https://user-images.githubusercontent.com/80155116/112402726-ece23280-8d71-11eb-8129-6460fd9de6ce.png)
+
+SSH login password is ``alejandro``.
+
+![image](https://user-images.githubusercontent.com/80155116/112402869-316dce00-8d72-11eb-97df-1d15a0590c0f.png)
+
+
+
+
 
 
 
