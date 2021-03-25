@@ -47,7 +47,7 @@ We can do this manually over telnet but we'll use MetaSploit, ``sudo apt update`
 
 ### Port Scanning
 
-``nmap -sV -sC -oN nmap-$ip.out $ip and cat nmap-$ip.out | grep open``
+``nmap -sV -sC -oN nmap-$ip.out $ip`` and ``cat nmap-$ip.out | grep open``
 
 ![image](https://user-images.githubusercontent.com/80155116/112123733-65d47380-8c26-11eb-8eed-cae86922abe5.png)
 
