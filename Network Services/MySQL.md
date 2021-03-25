@@ -92,8 +92,6 @@ Now we have successfully dumped the tables and column names of the whole databas
 
 Spool and output the hash for Carl.
 
-![image](https://user-images.githubusercontent.com/80155116/112409380-405a7d80-8d7e-11eb-872c-a1c87876af14.png)
-
 Finally, we'll use John the Ripper to crack the password: ``john hash.txt``.
 
 The password is ``doggie``.
