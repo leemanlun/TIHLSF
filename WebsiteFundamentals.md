@@ -42,4 +42,41 @@ Example for a GET request retrieving a JS file:
 
 ## Responses
 
+![image](https://user-images.githubusercontent.com/80155116/112713118-4eec9480-8f38-11eb-911b-928eacecb18a.png)
 
+## Cookies
+
+Cookies are small bits of data stored in browser, each browser store them separately. Usually used for **Session Management** or **Advertising**.
+
+They are normally sent with every HTTP request made to server.
+
+### Why?
+
+Because HTTP is stateless, cookies are used to keep track of this.
+
+Allows tracking of data like items in shopping cart, who you are, what you have done on the website.
+
+Cookies are broken down into several parts:
+* name
+* value
+* expiry
+* date
+* path
+
+Server is usually the one that sets cookies, response headers with ("Set-Cookie").
+
+### Using cookies
+
+A *Session Token* is given when logging in a website, intercepting these token will alow you to impersonate the person logging in.
+
+### Manipulating cookies
+
+Cookies can be viewed and modified using browser's developer tool.
+
+### Making HTTP requests cURL
+
+``curl http://10.10.216.45:8081/ctf/get`` - GET request. Make a GET request to the web server with path /ctf/get
+
+``curl -X POST --data flag_please http://10.10.216.45:8081/ctf/post`` - POST request. Make a POST request with the body "flag_please" to /ctf/post
+
+``curl -b 'flagpls=flagpls' http://10.10.216.45:8081/ctf/sendcookie`` - Set a cookie. Set a cookie with name "flagpls" and value "flagpls" in your devtools (or with curl!) and make a GET request to /ctf/sendcookie
